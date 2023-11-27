@@ -1,0 +1,24 @@
+[
+  {
+    "name": "candev",
+    "profileName": "canprofile",
+    "description": "Example can device",
+    "labels": [ "can", "bus" ],
+    "protocols": 
+    {
+            "CAN":
+            {
+                    "DevInterface" : "can0",
+                    "FilterMsgId" : "123",
+                    "FilterMask" :"2047",
+                    "TimeOut" : "5"
+            }
+
+   },
+   "autoEvents":
+    [
+      { "sourceName": "canmsg", "onChange": false, "interval": "10s" }
+    ]
+  }
+]
+
